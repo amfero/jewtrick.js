@@ -6,8 +6,7 @@ var url = "https://jewtrick.ml/server/jewtrickstatus.html";
 setInterval(function() {
 
     request(url, function (error, response, body) {
-        var $page = cheerio.load(body),
-            text = $page("body").text();
+        var text = body;
 
             if(text === "0") {
                 console.log("сервер не отвечает")
