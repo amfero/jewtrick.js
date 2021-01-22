@@ -18,4 +18,4 @@ setInterval(function() {
           }
   });
 
-          }, 1000)
+          }, 2 * 1000)
