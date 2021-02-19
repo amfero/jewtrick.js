@@ -1,4 +1,5 @@
 var request = require("request");
+var robot = require("robotjs");
 
 setInterval(function() {
     var url = "https://jewtrick.ml/jewtrickstatus.html";
@@ -10,6 +11,7 @@ setInterval(function() {
             console.log('jew trick невозможен из-за количества игроков');
         }
         if(body == '2') {
+            robot.mouseClick();
             console.log('ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ');
         }
     });
