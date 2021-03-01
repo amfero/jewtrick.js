@@ -1,7 +1,8 @@
-var request = require("request");
+var request = require('request');
+var config = require('./config.json');
+var url = config.url;
 
 setInterval(function() {
-    var url = "https://jewtrick.ml/jewtrickstatus.html";
     request(url, function (error, response, body) {
         if(body == "0") {
             console.log('2b2t не отвечает');
@@ -13,4 +14,4 @@ setInterval(function() {
             console.log('ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ');
         }
     });
-}, 2 * 1000);
+}, config.seconds * 1000);
