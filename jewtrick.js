@@ -14,4 +14,4 @@ setInterval(function() {
             console.log('ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ');
         }
     });
-}, config.seconds * 1000);
+}, config.interval);

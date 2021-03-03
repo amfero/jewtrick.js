@@ -16,5 +16,5 @@ setInterval(function() {
             console.log('ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ЖЕВТРИК ТАЙМ ');
         }
     });
-}, config.seconds);
+}, config.interval);
 

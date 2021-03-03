@@ -1,5 +1,5 @@
 {
  "url": "https://jewtrick.ml/jewtrickstatus.html",
- "seconds": 1000,
+ "interval": 1000,
  "timeoutBeforeConnect": 300
 }
